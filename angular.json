@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            
             "outputPath": "dist/front",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -62,10 +63,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "front:build:production"
+              "buildTarget": "front:build:production",
+              "proxyConfig": "src/environments/proxy.conf.json"
             },
             "development": {
-              "buildTarget": "front:build:development"
+              "buildTarget": "front:build:development",
+              "proxyConfig": "src/environments/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -96,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e2cc7e29-0c1d-4ab2-9ecf-09b845d1165c"
   }
 }

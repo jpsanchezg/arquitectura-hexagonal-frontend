@@ -1,23 +1,27 @@
-.contenedor{
-    width: 35%;
-    margin: 0 auto;
-    background-color: rgba(128, 128, 128, 0.359); 
-    padding: 0 1rem 1rem;
-    border-radius: 0.2rem;
-    border: 1px solid gray;
+.contenedor {
+  width: 35%;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.359);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
 }
 
-.titulo_contenedor, link_contenedor{
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
+.titulo_contenedor,
+.link_contenedor {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
-.titulo_contenedor>input,  .link_contenedor>input{
-    height: 1.5rem;
+.titulo_contenedor input,
+.link_contenedor input {
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+  /* Añadido para separación entre campos */
 }
 
-.subir_btn{
-    display: block;
-    margin: 0.7rem 0.5rem 0 auto
+.subir_btn {
+  display: block;
+  margin: 0.7rem auto 0;
 }

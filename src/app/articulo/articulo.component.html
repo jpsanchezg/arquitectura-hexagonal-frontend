@@ -1,16 +1,12 @@
-<div class="contenedor">
-    <div class="puntos">
-        <div>{{articulo.votos}}</div>
-        <div>puntos</div>
-    </div>
-    <div class="detalles">
-        <div>
-            <a href="{{articulo.link}}">{{articulo.titulo}}</a>
-            <div>{{articulo.link}}</div>
-        </div>
-        <div class="vota">
-            <div (click)="meGusta()">Me Gusta</div>
-            <div (click)="noMeGusta()">No Me Gusta</div>
-        </div>
-    </div>
-</div>  
+<div class="post">
+  <div class="vote-buttons">
+    <button class="upvote" (click)="meGusta()">&#9650;</button>
+    <button class="downvote" (click)="noMeGusta()">&#9660;</button>
+    <span class="vote-count">{{ articulo._upvotes }}</span>
+    <span class="vote-count">{{ articulo._downvotes }}</span>
+  </div>
+  <div class="post-content">
+    <h2 class="post-title">{{ articulo._title }}</h2>
+    <p class="post-description">{{ articulo._content }}</p>
+  </div>
+</div>

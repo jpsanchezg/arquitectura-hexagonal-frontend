@@ -1,32 +1,50 @@
-.contenedor{
-    margin: 0 auto;
-    width: 18rem;
-    display: flex;
+/* style.css */
+.posts-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.puntos{
-    aspect-ratio: 1/0.7;
-    background-color: rgba(128, 128, 128, 0.221);
-    border-radius: 0.2rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.8;
+.post {
+  display: flex;
 }
 
-.detalles{
-    flex: 1;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 0.9rem;
+.vote-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+  /* Ajusta el espacio entre los botones de votación y el contenido */
 }
 
-.vota{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.post-content {
+  flex: 1;
+  /* El contenido del post ocupará todo el espacio restante */
+}
+.upvote,
+.downvote {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+.vote-count {
+  font-size: 18px;
+  margin: 0 10px;
+  color: #333;
+}
+
+.post-content {
+  margin-left: 30px;
+}
+
+.post-title {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-description {
+  margin-bottom: 0;
+  color: #555;
 }
