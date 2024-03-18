@@ -1,6 +1,6 @@
 {
   "/reddit/*": {
-    "target": "http://127.0.0.1:8000",
+    "target": "https://arquitectura-hexagonal-backend-production.up.railway.app",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true
